@@ -12,9 +12,6 @@ import java.io.IOException;
 public class HelloApplication extends Application{
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Classic Casino");
-        stage.setScene(scene);
         stage.show();
     }
 
