@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Polygon?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #202631;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <GridPane translateX="-10.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.6666259765625" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.6666666666667" minWidth="10.0" prefWidth="400.6666666666667" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="0.0" prefWidth="0.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="134.00000762939453" minHeight="10.0" prefHeight="134.00000762939453" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="195.99999999999997" minHeight="10.0" prefHeight="195.99999999999997" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="134.33334350585938" minHeight="10.0" prefHeight="70.66666666666669" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                <ImageView fitHeight="100.0" fitWidth="165.0" layoutX="110.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" rotate="9.5" translateX="-50.0" translateY="-10.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@SlotMachine_Gif.gif" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="15.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" translateX="15.0" translateY="15.0" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                    <image>
+                        <Image url="@../../../../../../../../OneDrive/Desktop/Vector1.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="118.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                    <image>
+                        <Image url="@../../../../../../../../OneDrive/Desktop/logo.png" />
+                    </image>
+                    <effect>
+                        <Glow>
+                            <input>
+                                <DropShadow />
+                            </input>
+                        </Glow>
+                    </effect>
+                </ImageView>
+                <ImageView fitHeight="140.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true" rotate="9.5" translateX="-50.0" translateY="12.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@../../../../../../../../OneDrive/Desktop/Ticket.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ImageView>
+                <ImageView fitHeight="100.0" fitWidth="115.0" pickOnBounds="true" preserveRatio="true" rotate="-9.5" translateX="50.0" translateY="-12.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@../../../../../../../../OneDrive/Desktop/R.gif" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="104.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true" translateY="-22.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@../../../../../../../../OneDrive/Desktop/GIF%20For%20Menu.gif" />
+                    </image>
+                    <effect>
+                        <Glow level="1.0" />
+                    </effect>
+                </ImageView>
+                <ImageView fitHeight="140.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true" rotate="-9.5" translateX="50.0" translateY="12.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@../../../../../../../../OneDrive/Desktop/Ticket.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ImageView>
+                <ImageView fitHeight="2000.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <image>
+                        <Image url="@../../../../../../../../OneDrive/Desktop/Ticket.png" />
+                    </image>
+                    <effect>
+                        <DropShadow />
+                    </effect>
+                </ImageView>
+                <Polygon fill="#ffffff00" points="-5.538538455963135, -7.788412094116211, 23.4993896484375, -7.788453102111816, 8.498706817626953, -23.82566261291504" rotate="-90.0" stroke="WHITE" strokeType="INSIDE" translateX="25.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                <Polygon fill="#ffffff00" layoutX="51.0" layoutY="258.0" points="-5.538538455963135, -7.788412094116211, 23.4993896484375, -7.788453102111816, 8.498706817626953, -23.82566261291504" rotate="87.8" stroke="WHITE" strokeType="INSIDE" translateX="10.0" translateY="-3.0" GridPane.columnIndex="6" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                <ImageView fitHeight="41.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" translateY="10.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                    <image>
+                        <Image url="@../../../../../../../../OneDrive/Desktop/Dots.png" />
+                    </image>
+                </ImageView>
+            </children>
+            <effect>
+                <Blend />
+            </effect>
+        </GridPane>
+    </children>
+</HBox>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../StyleSheet/StyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spinwheelproject.Controller">
+   <Pane layoutX="-6.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView accessibleRole="PARENT" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../LoadingImage.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="play" accessibleRole="IMAGE_VIEW" layoutX="897.0" layoutY="890.0" mnemonicParsing="false" onAction="#play" style="-fx-border-color: #E7E8EC;" styleClass="Btn" text="PLAY" textAlignment="CENTER" textFill="#a68899">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Bloom />
+         </effect>
+      </Button>
+      <Circle fx:id="c1" accessibleRole="PARENT" fill="TRANSPARENT" layoutX="1516.0" layoutY="912.0" radius="31.0" stroke="#ae9517bf" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-dash-array: 30;" />
+      <Circle fx:id="c2" accessibleRole="PARENT" fill="TRANSPARENT" layoutX="1516.0" layoutY="913.0" radius="18.0" rotate="-47.6" stroke="#b9b8b8a8" strokeType="INSIDE" strokeWidth="5.0" style="-fx-stroke-dash-array: 18;" />
+   </Pane>
+</AnchorPane>

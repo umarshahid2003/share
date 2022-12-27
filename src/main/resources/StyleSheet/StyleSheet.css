@@ -1,0 +1,83 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-field{
+    -fx-font-family: "Berlin Sans FB";
+    -fx-font-style: red;
+}
+.farhaal{
+    -fx-background-color: blue;
+}
+#umar{
+    -fx-background-color: red;
+}
+/*LoginPage*/
+#LoginPageBG{
+    -fx-background-color: none;
+}
+
+.Btn{
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+    -fx-font-style: italic;
+}
+.dataEntryContainer{
+    -fx-background-color: rgba(146, 43, 80, 0.41);
+    -fx-border-radius: 700px;
+}
+
+
+
+
+.container{
+    -fx-background-color: linear-gradient(to right,#29323C, #485563);
+}
+#spinBtn{
+    -fx-background-radius: 50px;
+    -fx-background-color: orange;
+
+}
+.AnchorPane{
+    -fx-background-color: linear-gradient(to right, #ff637c,purple);
+}
+.squarepane{
+    -fx-border-color: yellow;
+    -fx-border-width: 3px;
+}
+/*.prizeLabel{*/
+/*    -fx-background-color: purple;*/
+/*}*/
+.spinWheelCircle{
+    -fx-background-color: linear-gradient(to right, #ff637c,purple);
+}
+.spinButton{
+    -fx-background-color: #14449e;
+    -fx-background-radius: 30px;
+    -fx-font-weight: 40px;
+}
+.fields{
+    -fx-background-color: transparent;
+    -fx-border-color: #1b1b64;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-font-style: red;
+    -fx-text-fill: #ec677d;
+}
+.loginBtn{
+    -fx-background-color: #070758;
+    -fx-border-radius: 10px;
+}

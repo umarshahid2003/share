@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="403.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="403.0" fitWidth="714.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../SpinWheelBG.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="352.0" fitWidth="407.0" layoutX="144.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Spin.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#1f93ff00" layoutX="348.0" layoutY="208.0" radius="144.0" stroke="#7b0c67" strokeType="INSIDE" strokeWidth="13.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="container" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="801.0" styleClass="container" stylesheets="@../../../StyleSheet/StyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spinwheelproject.Controller">
+    <children>
+        <AnchorPane fx:id="myCircle" layoutX="137.0" layoutY="75.0" prefHeight="448.0" prefWidth="528.0">
+            <children>
+                <Circle id="wheelBoundary" fill="#bf2727" layoutX="266.0" layoutY="222.0" onMouseClicked="#rotate" radius="199.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="8.0">
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                    </cursor>
+                </Circle>
+                <GridPane layoutX="65.0" layoutY="186.0" prefHeight="67.0" prefWidth="398.0" rotate="-45.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label contentDisplay="CENTER" prefHeight="78.0" prefWidth="198.0" text="5000$">
+                            <textFill>
+                                <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.4660493731498718" green="1.0" blue="0.3592592477798462" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color green="0.30000001192092896" blue="1.0" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <font>
+                                <Font name="Elephant Italic" size="27.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets />
+                            </GridPane.margin>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="78.0" prefWidth="198.0" text="5000$" GridPane.columnIndex="1">
+                            <textFill>
+                                <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.4660493731498718" green="1.0" blue="0.3592592477798462" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color green="0.30000001192092896" blue="1.0" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <font>
+                                <Font name="Elephant Italic" size="27.0" />
+                            </font>
+                            <padding>
+                                <Insets right="20.0" />
+                            </padding>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane layoutX="65.0" layoutY="183.0" prefHeight="80.0" prefWidth="398.0" rotate="87.1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="198.0" text="5000$">
+                            <textFill>
+                                <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.4660493731498718" green="1.0" blue="0.3592592477798462" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color green="0.30000001192092896" blue="1.0" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <font>
+                                <Font name="Elephant Italic" size="27.0" />
+                            </font>
+                            <padding>
+                                <Insets right="20.0" />
+                            </padding>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="78.0" prefWidth="198.0" text="5000$" GridPane.columnIndex="1">
+                            <textFill>
+                                <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.4660493731498718" green="1.0" blue="0.3592592477798462" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color green="0.30000001192092896" blue="1.0" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <font>
+                                <Font name="Elephant Italic" size="27.0" />
+                            </font>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane layoutX="84.0" layoutY="186.0" prefHeight="67.0" prefWidth="360.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.13133239746094" minWidth="10.0" prefWidth="210.33727416992187" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.25097961425777" minWidth="10.0" prefWidth="212.46272583007809" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label contentDisplay="CENTER" prefHeight="78.0" prefWidth="200.0" text="5000$">
+                            <textFill>
+                                <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.4660493731498718" green="1.0" blue="0.3592592477798462" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color green="0.30000001192092896" blue="1.0" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <font>
+                                <Font name="Elephant Italic" size="27.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets />
+                            </GridPane.margin>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="78.0" prefWidth="198.0" text="5000$" GridPane.columnIndex="1">
+                            <textFill>
+                                <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.4660493731498718" green="1.0" blue="0.3592592477798462" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color green="0.30000001192092896" blue="1.0" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <font>
+                                <Font name="Elephant Italic" size="27.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets />
+                            </GridPane.margin>
+                            <padding>
+                                <Insets right="20.0" />
+                            </padding>
+                        </Label>
+                    </children>
+                </GridPane>
+                <GridPane layoutX="77.0" layoutY="194.0" prefHeight="50.0" prefWidth="375.0" rotate="45.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.83920288085938" minWidth="10.0" prefWidth="206.1313934326172" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="369.0487174987793" minWidth="10.0" prefWidth="203.8686065673828" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label contentDisplay="CENTER" prefHeight="78.0" prefWidth="198.0" text="5000$">
+                            <textFill>
+                                <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.4660493731498718" green="1.0" blue="0.3592592477798462" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color green="0.30000001192092896" blue="1.0" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <font>
+                                <Font name="Elephant Italic" size="27.0" />
+                            </font>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </Label>
+                        <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="10.0" layoutY="18.0" prefHeight="78.0" prefWidth="198.0" text="0" GridPane.columnIndex="1">
+                            <textFill>
+                                <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                        <Stop>
+                                            <color>
+                                                <Color red="0.4660493731498718" green="1.0" blue="0.3592592477798462" />
+                                            </color>
+                                        </Stop>
+                                        <Stop offset="1.0">
+                                            <color>
+                                                <Color green="0.30000001192092896" blue="1.0" />
+                                            </color>
+                                        </Stop>
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                            <font>
+                                <Font name="Elephant Italic" size="27.0" />
+                            </font>
+                            <padding>
+                                <Insets right="20.0" />
+                            </padding>
+                        </Label>
+                    </children>
+                </GridPane>
+                <Line endX="97.20001220703125" endY="46.5999755859375" layoutX="167.0" layoutY="177.0" startX="-78.99998474121094" startY="-28.400009155273438" stroke="WHITE" strokeWidth="5.0" />
+                <Line endX="207.12896728515625" endY="160.59994506835938" layoutX="50.0" layoutY="63.0" startX="142.79998779296875" startY="-18.400009155273438" stroke="WHITE" strokeWidth="5.0" />
+                <Line endX="197.12896728515625" endY="150.59994506835938" layoutX="60.0" layoutY="73.0" startX="23.800003051757812" startY="214.39999389648438" stroke="WHITE" strokeWidth="5.0" />
+                <Line endX="194.20001220703125" endY="140.5999755859375" layoutX="70.0" layoutY="83.0" startX="119.5999755859375" startY="315.20001220703125" stroke="WHITE" strokeWidth="5.0" />
+                <Line endX="184.20001220703125" endY="130.5999755859375" layoutX="80.0" layoutY="93.0" startX="263.0000305175781" startY="309.6000061035156" stroke="WHITE" strokeWidth="5.0" />
+                <Line endX="174.20001220703125" endY="120.5999755859375" layoutX="90.0" layoutY="103.0" startX="355.39996337890625" startY="192.39999389648438" stroke="WHITE" strokeWidth="5.0" />
+                <Line endX="164.20001220703125" endY="110.5999755859375" layoutX="100.0" layoutY="113.0" startX="346.199951171875" startY="42.399993896484375" stroke="WHITE" strokeWidth="5.0" />
+                <Line endX="150.66448974609375" endY="97.06442260742188" layoutX="110.0" layoutY="123.0" startX="237.20001220703125" startY="-72.80000305175781" stroke="WHITE" strokeWidth="5.0" />
+                <Button id="spinBtn" fx:id="spinWheel" alignment="CENTER" graphicTextGap="50.0" layoutX="229.0" layoutY="190.0" mnemonicParsing="false" onMouseClicked="#rotate" prefHeight="67.0" prefWidth="70.0" text="Spin" textAlignment="CENTER" textFill="#3401ff">
+                    <font>
+                        <Font name="Book Antiqua Bold" size="18.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <effect>
+                        <Blend />
+                    </effect>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
