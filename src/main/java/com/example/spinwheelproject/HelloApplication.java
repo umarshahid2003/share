@@ -16,6 +16,12 @@ public class HelloApplication extends Application{
         stage.setTitle("Classic Casino");
         stage.setScene(scene);
         stage.show();
+
+        System.out.println("hvyvuyvyvuyv");
+
+
+            System.out.println("jbhgvhgv");
+
     }
 
     public static void main(String[] args) {
