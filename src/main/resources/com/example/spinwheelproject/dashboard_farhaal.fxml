@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.89" prefHeight="700.0" prefWidth="1135.0" style="-fx-background-color: linear-gradient(to right,#636483,#73588a,#506b88);" stylesheets="@../../../StyleSheet/dashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="45.0" layoutY="22.0" prefHeight="84.0" prefWidth="1062.0" style="-fx-background-radius: 50 50 0 0; -fx-background-color: rgba(255, 255, 255, 0.6); -fx-blend-mode: overlay;">
+         <children>
+            <Pane layoutX="975.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #FFFFFF99; -fx-background-radius: 50;">
+               <children>
+                  <ImageView fitHeight="43.0" fitWidth="40.0" layoutX="13.5" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Iconly/Category.png" />
+                     </image>
+                     <effect>
+                        <Bloom threshold="0.56">
+                           <input>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant>
+                                       <color>
+                                          <Color red="0.9894737005233765" green="0.9894737005233765" blue="0.9894737005233765" />
+                                       </color>
+                                    </Light.Distant>
+                                 </light>
+                              </Lighting>
+                           </input>
+                        </Bloom>
+                     </effect>
+                  </ImageView>
+               </children>
+               <effect>
+                  <Lighting diffuseConstant="1.29" specularConstant="0.96" specularExponent="31.01" surfaceScale="1.59">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Pane>
+            <Pane layoutX="40.0" layoutY="10.0" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: #FFFFFF99; -fx-background-radius: 50;">
+               <effect>
+                  <Lighting diffuseConstant="1.29" specularConstant="0.96" specularExponent="31.01" surfaceScale="1.59">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Pane>
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="45.0" layoutY="20.0" opacity="0.37" pickOnBounds="true" rotate="-90.0">
+               <image>
+                  <Image url="@../../../Iconly/—Pngtree—vector%20up%20arrow%20icon_4187256.png" />
+               </image>
+               <effect>
+                  <Bloom threshold="0.0">
+                     <input>
+                        <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="35.05" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow height="205.82" radius="50.955" width="0.0" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant>
+                                 <color>
+                                    <Color red="0.0736842080950737" green="0.02483430877327919" blue="0.02483430877327919" />
+                                 </color>
+                              </Light.Distant>
+                           </light>
+                        </Lighting>
+                     </input>
+                  </Bloom>
+               </effect>
+            </ImageView>
+         </children>
+         <effect>
+            <Lighting diffuseConstant="1.3" specularConstant="0.0" specularExponent="17.06" surfaceScale="2.79">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Pane>
+      <AnchorPane id="dashboardpane" layoutX="245.0" layoutY="519.0" prefHeight="142.0" prefWidth="577.0">
+         <children>
+            <HBox layoutX="108.0" layoutY="21.0" prefHeight="99.0" prefWidth="568.0">
+               <children>
+                  <ImageView fitHeight="91.0" fitWidth="100.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../Iconly/Bold/Home.png" />
+                     </image>
+                     <effect>
+                        <Glow level="0.92">
+                           <input>
+                              <ColorAdjust brightness="-0.41" contrast="0.17" hue="0.93" saturation="0.28" />
+                           </input>
+                        </Glow>
+                     </effect>
+                  </ImageView>
+                  <Button mnemonicParsing="false" prefHeight="94.0" prefWidth="102.0" />
+                  <ImageView fitHeight="91.0" fitWidth="100.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../Iconly/Bold/Profile.png" />
+                     </image>
+                     <effect>
+                        <Glow level="0.92">
+                           <input>
+                              <ColorAdjust brightness="-0.41" contrast="0.17" hue="0.93" saturation="0.28" />
+                           </input>
+                        </Glow>
+                     </effect>
+                  </ImageView>
+                  <Button mnemonicParsing="false" prefHeight="94.0" prefWidth="102.0" />
+                  <ImageView fitHeight="91.0" fitWidth="100.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../Iconly/Category.png" />
+                     </image>
+                     <effect>
+                        <Glow level="0.92">
+                           <input>
+                              <ColorAdjust brightness="-0.41" contrast="0.17" hue="0.93" saturation="0.28" />
+                           </input>
+                        </Glow>
+                     </effect>
+                  </ImageView>
+                  <Button mnemonicParsing="false" prefHeight="94.0" prefWidth="102.0" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="323.0" fitWidth="294.0" layoutX="420.0" layoutY="152.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Ticket.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="299.0" fitWidth="267.0" layoutX="655.0" layoutY="182.0" pickOnBounds="true" rotate="21.4">
+         <image>
+            <Image url="@../../../Ticket.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="296.0" fitWidth="269.0" layoutX="227.0" layoutY="187.0" pickOnBounds="true" rotate="-23.8">
+         <image>
+            <Image url="@../../../Ticket.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
