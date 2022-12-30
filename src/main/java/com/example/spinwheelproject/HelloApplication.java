@@ -16,6 +16,7 @@ public class HelloApplication extends Application{
         stage.setTitle("Classic Casino");
         stage.setScene(scene);
         stage.show();
+        System.out.println("nagapanga");
 
     }
 
