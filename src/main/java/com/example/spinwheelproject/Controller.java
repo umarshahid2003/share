@@ -1,6 +1,7 @@
 package com.example.spinwheelproject;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.animation.RotateTransition;
 import javafx.event.ActionEvent;
@@ -84,7 +85,9 @@ public class Controller {
 
         for (int i = 0; i < userSignUps.size()-1; i++) {
             if (Objects.equals(loginUsername.getText(), userSignUps.get(i).signUpUsername) && (Objects.equals(loginPassword.getText(), userSignUps.get(i).signUpPassword))){
-                //Scene Switch
+                Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Forgot-pass.fxml")));
+                Stage LoginWindow = (Stage) forgotPassword.getScene().getWindow();
+                LoginWindow.setScene(new Scene(root));
             }
         }
 
@@ -261,4 +264,38 @@ public class Controller {
 //        SignupWindow.setScene(new Scene(root));
 //
 //    }
+
+
+
+    //DashBoard
+
+
+    @FXML
+    private ImageView home;
+
+    @FXML
+    private ImageView profile;
+
+    @FXML
+    private ImageView setting;
+
+    @FXML
+    private void dashBordToSetting() throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Settings.fxml")));
+        Stage LoginWindow = (Stage) setting.getScene().getWindow();
+        LoginWindow.setScene(new Scene(root));
+    }
+
+
+    //Settings
+    @FXML
+    private ImageView SettingBack;
+
+    @FXML
+    private void SettingToDashBoard() throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("dashboard_farhaal.fxml")));
+        Stage LoginWindow = (Stage) SettingBack.getScene().getWindow();
+        LoginWindow.setScene(new Scene(root));
+    }
+
 }
