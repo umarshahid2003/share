@@ -1,4 +1,6 @@
 package com.example.spinwheelproject;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
@@ -19,12 +21,14 @@ import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
 import java.io.*;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
+import java.util.ResourceBundle;
 
 @SuppressWarnings("unchecked")
-public class Controller {
+public class Controller implements Initializable {
     @FXML
     private Button play;
     @FXML
@@ -40,13 +44,7 @@ public class Controller {
     private ArrayList<UserSignUp> userSignUps = new ArrayList<UserSignUp>();
 
     private void setUserSignUps() throws IOException, ClassNotFoundException {
-        File file = new File("E:\\OOP\\JAVA FX\\SpinWheelProject\\src\\main\\resources\\File\\SignUp.bin");
-        try (FileInputStream fis = new FileInputStream(file)) {
-            ObjectInputStream is = new ObjectInputStream(fis);
-            if (file.isFile()) {
-                this.userSignUps = (ArrayList<UserSignUp>)is.readObject();
-            }
-        }
+
 
 
         try (FileOutputStream fos = new FileOutputStream("E:\\OOP\\JAVA FX\\SpinWheelProject\\src\\main\\resources\\File\\SignUp.bin")) {
@@ -80,14 +78,26 @@ public class Controller {
     private TextField loginUsername;
     @FXML
     private PasswordField loginPassword;
+
+    @FXML
+    private Label usernameLabel = new Label("");
     @FXML
     private void loginData() throws IOException, ClassNotFoundException {
 
-        for (int i = 0; i < userSignUps.size()-1; i++) {
-            if (Objects.equals(loginUsername.getText(), userSignUps.get(i).signUpUsername) && (Objects.equals(loginPassword.getText(), userSignUps.get(i).signUpPassword))){
-                Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Forgot-pass.fxml")));
+        File file = new File("E:\\OOP\\JAVA FX\\SpinWheelProject\\src\\main\\resources\\File\\SignUp.bin");
+        try (FileInputStream fis = new FileInputStream(file)) {
+            ObjectInputStream is = new ObjectInputStream(fis);
+            if (file.isFile()) {
+                this.userSignUps = (ArrayList<UserSignUp>)is.readObject();
+            }
+        }
+
+        for (UserSignUp userSignUp : userSignUps) {
+            if (loginUsername.getText().equals(userSignUp.signUpUsername) && (loginPassword.getText().equals(userSignUp.signUpPassword))) {
+                Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("dashboard_farhaal.fxml")));
                 Stage LoginWindow = (Stage) forgotPassword.getScene().getWindow();
                 LoginWindow.setScene(new Scene(root));
+                System.out.println("Logged in");
             }
         }
 
@@ -279,6 +289,7 @@ public class Controller {
     @FXML
     private ImageView setting;
 
+
     @FXML
     private void dashBordToSetting() throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Settings.fxml")));
@@ -306,5 +317,12 @@ public class Controller {
     @FXML
     private void ChangePasswordToLogin(){
         //
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        usernameLabel.setText("hello");
+
+
     }
 }

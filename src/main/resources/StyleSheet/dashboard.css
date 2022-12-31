@@ -15,6 +15,20 @@
 
 /*Settings*/
 
+.SettingOptionPane{
+    -fx-background-color:none;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-border-width:3;
+}
+
+.SettingOptionPane:hover{
+    -fx-border-color:red;
+}
+
+
+
+
 #SettingMenu{
     -fx-background-color: rgba(146, 43, 80, 0.41);
     -fx-border-width: 5;

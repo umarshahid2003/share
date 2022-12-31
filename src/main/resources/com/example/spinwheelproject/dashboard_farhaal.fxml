@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.89" prefHeight="700.0" prefWidth="1135.0" style="-fx-background-color: linear-gradient(to top right,#e8181d,#000000);" stylesheets="@../../../StyleSheet/dashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <Pane layoutX="45.0" layoutY="9.0" prefHeight="97.0" prefWidth="1062.0" style="-fx-background-radius: 50 50 0 0; -fx-background-color: rgba(255, 255, 255, 0.6);">
@@ -15,12 +18,16 @@
          </ImageView>
       </Pane>
       <Pane layoutX="42.0" layoutY="21.0" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white; -fx-background-radius: 50;">
-         <children>
-            <ImageView fitHeight="50.0" fitWidth="50.0" opacity="0.37" pickOnBounds="true" rotate="270.0" translateX="6.0" translateY="7.0">
-               <Image url="@../../../Iconly/—Pngtree—vector%20up%20arrow%20icon_4187256.png" />
-            </ImageView>
-         </children>
+         <ImageView fitHeight="50.0" fitWidth="50.0" opacity="0.37" pickOnBounds="true" rotate="270.0" translateX="6.0" translateY="7.0">
+            <Image url="@../../../Iconly/—Pngtree—vector%20up%20arrow%20icon_4187256.png" />
+         </ImageView>
       </Pane>
+      <Text fill="RED" layoutX="599.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coin Balance : 000000000000">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Text>
+      <Label fx:id="usernameLabel" layoutX="151.0" layoutY="45.0" text="Label" />
    </Pane>
    <AnchorPane id="dashboardpane" layoutX="245.0" layoutY="519.0" prefHeight="142.0" prefWidth="577.0">
       <HBox layoutX="108.0" layoutY="21.0" prefHeight="99.0" prefWidth="568.0">
@@ -32,9 +39,11 @@
             <Image url="@../../../Iconly/Bold/Profile.png" />
          </ImageView>
          <Button mnemonicParsing="false" prefHeight="94.0" prefWidth="102.0" />
-         <ImageView fx:id="setting" fitHeight="91.0" fitWidth="100.0" onMouseClicked="#dashBordToSetting" pickOnBounds="true">
-            <Image url="@../../../Iconly/Category.png" />
-         </ImageView>
+         <Pane prefHeight="99.0" prefWidth="116.0">
+            <ImageView fx:id="setting" fitHeight="91.0" fitWidth="100.0" pickOnBounds="true">
+               <Image url="@../../../Iconly/Category.png" />
+            </ImageView>
+         </Pane>
          <Button mnemonicParsing="false" prefHeight="94.0" prefWidth="102.0" />
       </HBox>
    </AnchorPane>
