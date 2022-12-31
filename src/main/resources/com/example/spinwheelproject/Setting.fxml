@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.89" prefHeight="700.0" prefWidth="1135.0" style="-fx-background-color: linear-gradient(to top right,#e8181d,#000000);" stylesheets="@../../../StyleSheet/dashboard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -23,7 +22,7 @@
             </Pane>
             <Pane layoutX="42.0" layoutY="21.0" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white; -fx-background-radius: 50;">
                <children>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" opacity="0.37" pickOnBounds="true" rotate="270.0" translateX="6.0" translateY="7.0">
+                  <ImageView fx:id="SettingBack" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#SettingToDashBoard" opacity="0.37" pickOnBounds="true" rotate="270.0" translateX="6.0" translateY="7.0">
                      <image>
                         <Image url="@../../../Iconly/—Pngtree—vector%20up%20arrow%20icon_4187256.png" />
                      </image>
@@ -32,36 +31,31 @@
             </Pane>
          </children>
       </Pane>
-      <AnchorPane id="dashboardpane" layoutX="214.0" layoutY="559.0" prefHeight="89.0" prefWidth="687.0">
+      <AnchorPane id="dashboardpane" layoutX="245.0" layoutY="519.0" prefHeight="142.0" prefWidth="577.0">
          <children>
-            <HBox layoutX="65.0" layoutY="15.0" prefHeight="90.0" prefWidth="622.0">
+            <HBox layoutX="108.0" layoutY="21.0" prefHeight="99.0" prefWidth="568.0">
                <children>
-                  <ImageView fx:id="home" fitHeight="70.0" fitWidth="90.0" pickOnBounds="true" translateX="6.0" translateY="5.0">
+                  <ImageView fx:id="home" fitHeight="91.0" fitWidth="100.0" pickOnBounds="true">
                      <image>
                         <Image url="@../../../Iconly/Bold/Home.png" />
                      </image>
                   </ImageView>
                   <Button mnemonicParsing="false" prefHeight="94.0" prefWidth="102.0" />
-                  <ImageView fx:id="profile" fitHeight="70.0" fitWidth="90.0" pickOnBounds="true" translateX="40.0" translateY="7.0">
+                  <ImageView fx:id="profile" fitHeight="91.0" fitWidth="100.0" pickOnBounds="true">
                      <image>
                         <Image url="@../../../Iconly/Bold/Profile.png" />
                      </image>
                   </ImageView>
                   <Button mnemonicParsing="false" prefHeight="94.0" prefWidth="102.0" />
-                  <Pane prefHeight="13.0" prefWidth="102.0" style="-fx-background-color: #e6afaf; -fx-border-radius: 20; -fx-background-radius: 20;" translateX="51.0" translateY="-7.0">
-                     <children>
-                        <ImageView fx:id="setting" fitHeight="70.0" fitWidth="90.0" layoutX="6.0" layoutY="7.0" onMouseClicked="#dashBordToSetting" pickOnBounds="true" translateY="3.0">
-                           <image>
-                              <Image url="@../../../Iconly/Category.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
+                  <ImageView fx:id="setting" fitHeight="91.0" fitWidth="100.0" onMouseClicked="#dashBordToSetting" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../Iconly/Category.png" />
+                     </image>
+                  </ImageView>
                   <Button mnemonicParsing="false" prefHeight="94.0" prefWidth="102.0" />
                </children>
             </HBox>
          </children>
       </AnchorPane>
-      <VBox id="SettingMenu" layoutX="103.0" layoutY="135.0" opacity="0.7" prefHeight="384.0" prefWidth="939.0" />
    </children>
 </Pane>

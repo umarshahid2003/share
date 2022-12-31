@@ -12,3 +12,12 @@
 -fx-background-radius:  0 0 50 50;
 
 }
+
+/*Settings*/
+
+#SettingMenu{
+    -fx-background-color: rgba(146, 43, 80, 0.41);
+    -fx-border-width: 5;
+    -fx-border-color: red;
+    -fx-border-radius: 4;
+}

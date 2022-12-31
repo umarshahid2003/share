@@ -298,4 +298,13 @@ public class Controller {
         LoginWindow.setScene(new Scene(root));
     }
 
+
+    //Chnage Password
+    @FXML
+    private Button ChangePasswordBtn;
+
+    @FXML
+    private void ChangePasswordToLogin(){
+        //
+    }
 }
