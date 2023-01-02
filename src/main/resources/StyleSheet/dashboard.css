@@ -1,16 +1,10 @@
 .button {
     -fx-background-color: none;
-
-
 }
-
 #dashboardpane{
-
-
     -fx-background-color: rgba(255, 255, 255, 0.16);
     -fx-border-radius: 0,0,10,10px;
--fx-background-radius:  0 0 50 50;
-
+    -fx-background-radius:  0 0 50 50;
 }
 
 /*Settings*/
@@ -25,9 +19,6 @@
 .SettingOptionPane:hover{
     -fx-border-color:red;
 }
-
-
-
 
 #SettingMenu{
     -fx-background-color: rgba(146, 43, 80, 0.41);

@@ -12,9 +12,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="383.0" style="-fx-background-color: #2A313B; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="383.0" style="-fx-background-color: #2A313B; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.spinwheelproject.SignUpController">
    <children>
-      <Button layoutX="89.0" layoutY="412.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="211.0" style="-fx-background-radius: 7; -fx-background-color: #5A4CFF;" text="Sign up" textFill="WHITE">
+      <Button layoutX="89.0" layoutY="412.0" mnemonicParsing="false" onAction="#SignUpData" prefHeight="25.0" prefWidth="211.0" style="-fx-background-radius: 7; -fx-background-color: #5A4CFF;" text="Sign up" textFill="WHITE">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="20.0" />
          </font>
@@ -32,7 +32,7 @@
             <Font name="Berlin Sans FB" size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="77.0" layoutY="134.0" prefHeight="30.0" prefWidth="234.0" promptText="Username" style="-fx-background-radius: 10; -fx-background-color: #2A313B; -fx-border-width: 1; -fx-border-color: #5A4CFF; -fx-border-radius: 9; -fx-text-fill: grey;">
+      <TextField fx:id="signUpUsernameTextField" layoutX="77.0" layoutY="134.0" prefHeight="30.0" prefWidth="234.0" promptText="Username" style="-fx-background-radius: 10; -fx-background-color: #2A313B; -fx-border-width: 1; -fx-border-color: #5A4CFF; -fx-border-radius: 9; -fx-text-fill: grey;">
          <padding>
             <Insets left="33.0" />
          </padding>
@@ -43,7 +43,7 @@
             <Cursor fx:constant="TEXT" />
          </cursor>
       </TextField>
-      <PasswordField layoutX="77.0" layoutY="174.0" prefHeight="30.0" prefWidth="234.0" promptText="Password" style="-fx-background-radius: 10; -fx-background-color: #2A313B; -fx-border-width: 1; -fx-border-color: #5A4CFF; -fx-border-radius: 9; -fx-text-fill: grey;">
+      <PasswordField fx:id="signUpPasswordField" layoutX="77.0" layoutY="174.0" prefHeight="30.0" prefWidth="234.0" promptText="Password" style="-fx-background-radius: 10; -fx-background-color: #2A313B; -fx-border-width: 1; -fx-border-color: #5A4CFF; -fx-border-radius: 9; -fx-text-fill: grey;">
          <padding>
             <Insets left="33.0" />
          </padding>
@@ -63,11 +63,11 @@
          </cursor>
       </CheckBox>
       <Text fill="WHITE" layoutX="85.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Do have an account?" />
-      <Text fill="#5a4cff" layoutX="203.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in">
+      <Text fx:id="signupSignInText" fill="#5a4cff" layoutX="203.0" layoutY="468.0" onMouseClicked="#signUpToSignIn" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Text>
-      <PasswordField layoutX="78.0" layoutY="215.0" prefHeight="30.0" prefWidth="234.0" promptText="Confirm-password" style="-fx-background-radius: 10; -fx-background-color: #2A313B; -fx-border-width: 1; -fx-border-color: #5A4CFF; -fx-border-radius: 9; -fx-text-fill: grey;">
+      <PasswordField fx:id="signUpConfirmPasswordField" layoutX="78.0" layoutY="215.0" prefHeight="30.0" prefWidth="234.0" promptText="Confirm-password" style="-fx-background-radius: 10; -fx-background-color: #2A313B; -fx-border-width: 1; -fx-border-color: #5A4CFF; -fx-border-radius: 9; -fx-text-fill: grey;">
          <padding>
             <Insets left="33.0" />
          </padding>
@@ -86,7 +86,7 @@
             <Font name="Berlin Sans FB" size="15.0" />
          </font>
       </Label>
-      <PasswordField layoutX="78.0" layoutY="337.0" prefHeight="30.0" prefWidth="234.0" promptText="Your favourite teacher at school?" style="-fx-background-radius: 10; -fx-background-color: #2A313B; -fx-border-width: 1; -fx-border-color: #5A4CFF; -fx-border-radius: 9; -fx-text-fill: grey;">
+      <PasswordField fx:id="signUpFvrtTeacherField" layoutX="78.0" layoutY="337.0" prefHeight="30.0" prefWidth="234.0" promptText="Your favourite teacher at school?" style="-fx-background-radius: 10; -fx-background-color: #2A313B; -fx-border-width: 1; -fx-border-color: #5A4CFF; -fx-border-radius: 9; -fx-text-fill: grey;">
          <padding>
             <Insets left="33.0" />
          </padding>
@@ -100,7 +100,7 @@
             <Cursor fx:constant="TEXT" />
          </cursor>
       </PasswordField>
-      <PasswordField layoutX="78.0" layoutY="298.0" prefHeight="30.0" prefWidth="234.0" promptText="What is your birth place?" style="-fx-background-radius: 10; -fx-background-color: #2A313B; -fx-border-width: 1; -fx-border-color: #5A4CFF; -fx-border-radius: 9; -fx-text-fill: grey;">
+      <PasswordField fx:id="signUpBirthField" layoutX="78.0" layoutY="298.0" prefHeight="30.0" prefWidth="234.0" promptText="What is your birth place?" style="-fx-background-radius: 10; -fx-background-color: #2A313B; -fx-border-width: 1; -fx-border-color: #5A4CFF; -fx-border-radius: 9; -fx-text-fill: grey;">
          <padding>
             <Insets left="33.0" />
          </padding>

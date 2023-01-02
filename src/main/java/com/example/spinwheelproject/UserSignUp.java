@@ -3,6 +3,8 @@ package com.example.spinwheelproject;
 import java.io.Serializable;
 
 public class UserSignUp implements Serializable {
+
+
     String birthPlace;
 
     String favouriteTeacher;
@@ -20,6 +22,14 @@ public class UserSignUp implements Serializable {
         this.signUpUsername = signUpUsername;
         this.signUpPassword = signUpPassword;
     }
+
+
+
+
+
+
+
+
 
     @Override
     public String toString() {
